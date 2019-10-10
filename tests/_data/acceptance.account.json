@@ -1,0 +1,18 @@
+{
+    "environments": {
+        "dev": {
+            "accountInfo": {
+                "firstName": "Acceptance",
+                "lastName": "Test",
+                "email": "abc@test.com"
+            }
+        },
+        "stage": {
+            "accountInfo": {
+                "firstName": "Acceptance",
+                "lastName": "Test",
+                "email": "abc@test.com"
+            }
+        }
+    }
+}

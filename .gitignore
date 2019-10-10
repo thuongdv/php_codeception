@@ -1,0 +1,7 @@
+.idea
+/tests/_output
+/tests/vendor
+/tests/composer.lock
+/tests/nbproject
+/nbproject
+/.vscode

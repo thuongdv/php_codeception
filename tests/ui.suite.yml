@@ -1,0 +1,18 @@
+actor: UITester
+groups:
+  paracept_*: './paracept_*'
+  cleanup: 'tests/_paracept/clean_up'
+  window_only: 'tests/_paracept/windows_only'
+modules:
+  enabled:
+    - \Helper\UI\UI
+    - WebDriver:
+        port: 4444
+        window_size: maximize
+        wait_for_control: 30
+        wait_for_page_loaded: 60
+        wait_for_email: 300
+        clear_cookies: true
+        restart: false
+    - REST:
+        depends: PhpBrowser

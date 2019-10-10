@@ -1,0 +1,17 @@
+# `ui.staging.chrome` environment config goes here
+modules:
+  config:
+    WebDriver:
+      browser: 'chrome'
+      url: http://automationpractice.com/index.php
+      capabilities:
+        chromeOptions:
+          prefs:
+            safebrowsing.enabled: true # Ignore unsafe download file types e.g. .exe/jar/etc
+    REST:
+      url: http://automationpractice.com/index.php/api/v1
+extensions:
+  enabled:
+    - Codeception\Extension\RunProcess:
+        0: java -Dwebdriver.chrome.driver=./tests/webdrivers/chromedriver.exe -jar ./tests/webdrivers/selenium-server-standalone-3.141.59.jar
+        sleep: 3 # wait n seconds for processes to boot

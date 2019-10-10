@@ -1,0 +1,20 @@
+actor: Tester
+paths:
+    tests: tests
+    log: tests/_output
+    support: tests/_support
+    data: tests/_data
+    envs: tests/_envs
+settings:
+    bootstrap: _bootstrap.php
+    colors: true
+    strict_xml: true
+    memory_limit: 1024M
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+        - Codeception\Extension\Logger
+        - CustomConsole
+    config:
+        Codeception\Extension\Logger:
+            max_files: 5 # logger configuration
