@@ -1,15 +1,15 @@
-# `ui.staging.chrome` environment config goes here
+# `act.test.chrome` environment config goes here
 modules:
   config:
     WebDriver:
       browser: 'chrome'
-      url: http://automationpractice.com/index.php
+      url: https://parabank.parasoft.com/parabank/index.htm
       capabilities:
         chromeOptions:
           prefs:
             safebrowsing.enabled: true # Ignore unsafe download file types e.g. .exe/jar/etc
     REST:
-      url: http://automationpractice.com/index.php/api/v1
+      url: https://parabank.parasoft.com/parabank/services/bank
 extensions:
   enabled:
     - Codeception\Extension\RunProcess:

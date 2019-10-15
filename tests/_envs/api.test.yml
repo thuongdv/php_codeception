@@ -1,0 +1,5 @@
+# `api.test` environment config goes here
+modules:
+  config:
+    PhpBrowser:
+      url: https://parabank.parasoft.com/parabank/services/bank

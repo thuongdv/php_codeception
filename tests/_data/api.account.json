@@ -1,18 +1,20 @@
 {
     "environments": {
-        "dev": {
-            "accountInfo": {
-                "firstName": "Acceptance",
-                "lastName": "Test",
-                "email": "abc@test.com"
-            }
+        "test": {
+            "firstName": "Moon",
+            "lastName": "From",
+            "username": "frommoon",
+            "password": "frommoon",
+            "customerId": 12434,
+            "id": 13677
         },
         "stage": {
-            "accountInfo": {
-                "firstName": "Acceptance",
-                "lastName": "Test",
-                "email": "abc@test.com"
-            }
+            "firstName": "Moon",
+            "lastName": "From",
+            "username": "frommoon",
+            "password": "frommoon",
+            "customerId": 12434,
+            "id": 13677
         }
     }
 }

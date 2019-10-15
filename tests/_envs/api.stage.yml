@@ -1,4 +1,0 @@
-modules:
-  config:
-    PhpBrowser:
-      url: http://automationpractice.com/index.php/api/v1

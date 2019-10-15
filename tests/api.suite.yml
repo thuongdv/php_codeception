@@ -1,11 +1,9 @@
-class_name: ApiTester
+actor: ApiTester
 modules:
   enabled:
-    - \Helper\Api\Api
+    - \Helper\Api
     - PhpBrowser:
         curl:
           CURLOPT_TIMEOUT: 60
     - REST:
         depends: PhpBrowser
-    - \SecureShell\SSH
-    - \CodeceptionWrapPHPUnitAssertion
