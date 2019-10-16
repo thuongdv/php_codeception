@@ -1,0 +1,13 @@
+# `acceptance.test.chrome.parallel` environment config goes here
+
+modules:
+  config:
+    WebDriver:
+      browser: 'chrome'
+      window_size: 1920x1080
+      url: https://parabank.parasoft.com/parabank/index.htm
+    REST:
+      url: https://parabank.parasoft.com/parabank/services/bank
+    RunCommand:
+      cmd: java -Dwebdriver.chrome.driver=./tests/webdrivers/chromedriver.exe -jar ./tests/webdrivers/selenium-server-standalone-3.141.59.jar
+      sleep: 3 # wait n seconds for processes to boot

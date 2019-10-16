@@ -1,8 +1,10 @@
 {
-    "require": {
-        "codeception/codeception": "3.1.1",
-        "monolog/monolog": "1.25.1",
-        "ext-json": "*",
-        "flow/jsonpath": "0.4.0"
-    }
+  "require": {
+    "codeception/codeception": "3.1.1",
+    "monolog/monolog": "1.25.1",
+    "ext-json": "*",
+    "flow/jsonpath": "0.4.0",
+    "consolidation/robo": "1.4.10",
+    "codeception/robo-paracept": "0.4.2"
+  }
 }

@@ -5,6 +5,8 @@
 # If you need both WebDriver and PHPBrowser tests - create a separate suite.
 
 actor: AcceptanceTester
+groups:
+  paracept_*: './paracept_*'
 modules:
     enabled:
         - \Helper\Acceptance

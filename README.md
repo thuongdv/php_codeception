@@ -40,13 +40,18 @@ It will automatically generated vendor folder which contains dependencies.
 ## 2. Run
 ### API suite
 ```
-./tests/vendor/bin/codecept -c codeception.yml run api --env api.dev -x notFullyImplementedOrSupported --html
+./vendor/bin/codecept -c codeception.yml run api --env api.test -x notFullyImplementedOrSupported --html
 ```
 
 ### Acceptance suite
 **UI browsers: Chrome, Firefox etc**
 ```
-./tests/vendor/bin/codecept run ui tests/ui/ --env ui.dev.chrome --html
+./vendor/bin/codecept run acceptance --env acceptance.test.chrome --html
+```
+
+### Parallel running
+```
+./vendor/bin/robo parallel:all acceptance.test.chrome.parallel codeception.yml skipGroups
 ```
 
 ## Note: For Ubuntu
@@ -70,4 +75,4 @@ sudo apt install composer
 ```
 
 ## 3. Documentation
-*guides/1.WORKING_WITH_FRAMEWORK.md* helps you working with codeception, common IDEs.
+*guides/WORKING_WITH_FRAMEWORK.md* helps you working with codeception, common IDEs.
