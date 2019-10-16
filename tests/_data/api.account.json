@@ -1,20 +1,20 @@
 {
-    "environments": {
-        "test": {
-            "firstName": "Moon",
-            "lastName": "From",
-            "username": "frommoon",
-            "password": "frommoon",
-            "customerId": 12434,
-            "id": 13677
-        },
-        "stage": {
-            "firstName": "Moon",
-            "lastName": "From",
-            "username": "frommoon",
-            "password": "frommoon",
-            "customerId": 12434,
-            "id": 13677
-        }
+  "environments": {
+    "test": {
+      "firstName": "Moon",
+      "lastName": "From",
+      "username": "frommoon",
+      "password": "frommoon",
+      "customerId": 12434,
+      "id": 13677,
+      "address": {
+        "street": "Moon",
+        "city": "North",
+        "state": "O2",
+        "zipCode": "54321"
+      },
+      "phoneNumber": "0987654321",
+      "ssn": "000000000"
     }
+  }
 }
