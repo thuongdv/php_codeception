@@ -10,5 +10,12 @@ interface LeftMenuConst
 
 trait LeftPanel
 {
+    public function logout()
+    {
+        /** @var \AcceptanceTester $I */
+        $I = $this->acceptanceTester;
 
+        $I->click(sprintf(self::LINK, 'Log Out'));
+        $I->waitForPageLoaded();
+    }
 }

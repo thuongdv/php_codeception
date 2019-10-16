@@ -8,7 +8,7 @@ class LogInCest
     /**
      * @group P1
      */
-    public function tc01SignInWithExistingCredentials(AcceptanceTester $I, HomePage $homePage, OverviewPage $overviewPage)
+    public function tc01LogInWithExistingCredentials(AcceptanceTester $I, HomePage $homePage, OverviewPage $overviewPage)
     {
         $I->comment('I navigate to home page');
         $I->amOnPage('');
