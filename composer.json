@@ -1,10 +1,13 @@
 {
   "require": {
-    "codeception/codeception": "3.1.1",
-    "monolog/monolog": "1.25.1",
+    "codeception/codeception": "^5.3",
+    "monolog/monolog": "^3.12",
     "ext-json": "*",
-    "flow/jsonpath": "0.4.0",
-    "consolidation/robo": "1.4.10",
-    "codeception/robo-paracept": "0.4.2"
+    "consolidation/robo": "^4.0",
+    "codeception/robo-paracept": "^3.1",
+    "softcreatr/jsonpath": "^0.10",
+    "codeception/module-webdriver": "^4.0",
+    "codeception/module-phpbrowser": "^3.0",
+    "codeception/module-rest": "^3.0"
   }
 }

@@ -3,6 +3,7 @@ modules:
   enabled:
     - \Helper\Api
     - PhpBrowser:
+        url: 'https://parabank.parasoft.com/parabank/services/bank'
         curl:
           CURLOPT_TIMEOUT: 60
     - REST:

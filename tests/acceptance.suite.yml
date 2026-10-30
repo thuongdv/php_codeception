@@ -11,11 +11,13 @@ modules:
     enabled:
         - \Helper\Acceptance
         - WebDriver:
-              port: 4444
-              window_size: maximize
-              wait_for_control: 30
-              wait_for_page_loaded: 60
-              wait_for_email: 300
-              clear_cookies: true
-              restart: false
+            browser: chrome
+            url: 'http://localhost:1234'
+            port: 4444
+            window_size: maximize
+            wait_for_control: 30
+            wait_for_page_loaded: 60
+            wait_for_email: 300
+            clear_cookies: true
+            restart: false
     step_decorators: ~        

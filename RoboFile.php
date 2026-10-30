@@ -6,11 +6,13 @@ require_once __DIR__ . '/vendor/codeception/codeception/autoload.php';
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Yaml\Yaml;
+use Codeception\Task\Merger\ReportMerger;
+use Codeception\Task\Splitter\TestsSplitterTrait;
 
 class RoboFile extends \Robo\Tasks
 {
-    use \Codeception\Task\MergeReports;
-    use \Codeception\Task\SplitTestsByGroups;
+    use ReportMerger;
+    use TestsSplitterTrait;
 
     const NUMBER_OF_GROUPS = 2;
 
