@@ -3,5 +3,4 @@
 /vendor
 /nbproject
 /.vscode
-composer.lock
 /tests/_paracept
